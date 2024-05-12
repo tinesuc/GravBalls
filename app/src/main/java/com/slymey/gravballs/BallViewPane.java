@@ -85,7 +85,7 @@ public class BallViewPane extends View {
         if(drag_ell!=(null)) Ball.d = (float) (Math.pow(drag_ell.getProgress()/1000.0f, 2)/10.0);
         for(int i=0;i<balls.length;i++){
             balls[i].move(w, h, balls);
-            System.out.println(balls[i].dx+" "+balls[i].dy);
+            //System.out.println(balls[i].dx+" "+balls[i].dy);
             if(Float.isNaN(balls[i].dx))throw new AssertionError("NaN");
             if(touching)
                 balls[i].applyForce(fx, fy, f*20);
