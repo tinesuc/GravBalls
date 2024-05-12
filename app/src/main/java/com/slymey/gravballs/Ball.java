@@ -67,7 +67,7 @@ public class Ball {
                 fsumy += (float) (Math.sin(phi)*vp/d);
             }
         }
-        System.out.println("fsum: "+fsumx+","+fsumy+" "+m);
+        //System.out.println("fsum: "+fsumx+","+fsumy+" "+m);
         if(Float.isNaN(fsumx)||Float.isNaN(fsumy))throw new AssertionError("NaN");
         dx += fsumx/m;
         dy += fsumy/m;
